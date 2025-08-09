@@ -1,0 +1,70 @@
+
+<html>
+  <head>
+     <title>Codeforces Profile Viewer</title>
+    
+     <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  
+<body>
+ <div class="container">
+  <h1 class="title">Codeforces Profile Viewer</h1>
+  
+  <div class="search-section">
+   <div class="input-group">
+    <input type="text" id="usernameInput" class="input-field" placeholder="Enter Codeforces username..." autocomplete="off" />
+    <button id="searchBtn" class="search-btn">Search</button>
+   </div>
+  </div>
+  
+  <div id="loading" class="loading">
+   <div class="spinner"></div>
+   <p>Loading profile data...</p>
+  </div>
+  
+  <div id="errorMessage" class="error-message"></div>
+  
+  <div id="profileCard" class="profile-card">
+   <div class="profile-header">
+    <img id="userAvatar" class="avatar" src="" alt="User Avatar">
+    <div class="user-info">
+     <h2 id="userFullName"></h2>
+     <div id="userHandle" class="handle"></div>
+     <div id="userRank" class="rank"></div>
+    </div>
+   </div>
+   
+   <div class="stats-grid">
+    <div class="stat-card">
+     <div id="userRating" class="stat-value">0</div>
+     <div class="stat-label">Current Rating</div>
+    </div>
+    <div class="stat-card">
+     <div id="maxRating" class="stat-value">0</div>
+     <div class="stat-label">Max Rating</div>
+    </div>
+    <div class="stat-card">
+     <div id="userContribution" class="stat-value">0</div>
+     <div class="stat-label">Contribution</div>
+    </div>
+    <div class="stat-card">
+     <div id="userRegistration" class="stat-value">-</div>
+     <div class="stat-label">Registration</div>
+    </div>
+    <div class="stat-card">
+     <div id="lastOnline" class="stat-value">-</div>
+     <div class="stat-label">Last Online</div>
+    </div>
+    <div class="stat-card">
+     <div id="friendsCount" class="stat-value">0</div>
+     <div class="stat-label">Friends</div>
+    </div>
+   </div>
+  </div>
+ </div>
+  
+  <script src="index.js"></script>
+  
+</body>
+</html>
